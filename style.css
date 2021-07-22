@@ -2,6 +2,48 @@ body {
   font-family: "Hind Siliguri", sans-serif;
 }
 
+.slogan {
+  height: 200px;
+  color: #162b7c;
+}
+
+/* for hover background effect */
+
+.category img {
+  width: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.category p {
+  position: relative;
+  z-index: 2;
+}
+
+.category-style {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin-top: -118px;
+  margin-left: -48px;
+  background: #162b7c;
+  display: none;
+}
+
+.round-div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-top: 13px;
+  margin-left: 24px;
+  z-index: 1;
+}
+
+.category-item:hover .category-style {
+  display: block;
+}
+
 .btn-digi-haat {
   background-color: #162b7c;
   color: white;
@@ -49,3 +91,14 @@ h6 {
   height: 10px;
   border-radius: 100%;
 } */
+
+/* Responsive Design */
+
+@media screen and (max-width: 576px) {
+  .d-flex {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+  }
+}
